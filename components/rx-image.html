@@ -1,0 +1,35 @@
+<!-- Carregar Core Polymer -->
+<link rel="import" href="../core/polymer/polymer.html">
+<!-- Carregar Javascript para encapsular filtros -->
+<script type="text/javascript" src="Filters.js"></script>
+<!-- 
+ - Definição do nome do elemento - rx-image
+ - Definição de atributos
+-->
+<polymer-element name="rx-image" 
+                 attributes="src rotation width height style" >
+    <template>
+        <!-- Style - Filtros -->
+        <style>
+            @import url('Filters.css');
+        </style>     
+        
+        <!-- Elemento Base <img> -->
+        <img    id="webComponentImg" 
+                src="{{src}}" 
+                style="{{style}}" 
+                height="{{height}}"  
+                width="{{width}}" 
+        />
+        
+        <!-- Agrupamento de Filtros pela tag <fx-filter> -->
+        <content id="content" select="fx-filter"></content>
+    </template>
+    <!--
+    - Javascript encapsulado para gerenciar o componente
+    -->
+    <script type="text/javascript" src="RxImage.js"></script>
+</polymer-element>
+
+
+

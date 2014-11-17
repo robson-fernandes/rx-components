@@ -1,0 +1,51 @@
+.GrayScaleFilter{
+
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.ShadowFilter {
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+.BlurFilter {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.InvertFilter {
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    -ms-filter: invert(1);
+    -o-filter: invert(1);
+    filter: invert(1);
+}
+
+.SepiaFilter {
+    -webkit-filter: sepia(1);
+    -moz-filter: sepia(1);
+    -ms-filter: sepia(1);
+    -o-filter: sepia(1);
+    filter: sepia(1);
+}
+
+.Rotation
+{
+
+transform:rotate({{rotation}}deg);
+-ms-transform:rotate({{rotation}}deg); /* IE 9 */
+-webkit-transform:rotate({{rotation}}deg); /* Opera, Chrome, and Safari */
+
+}

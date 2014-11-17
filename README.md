@@ -20,4 +20,5 @@ Aplicação do filtro sépia através da tag ```<fx-sepia>```. O Filtro sépia a
 ```
 
 ###Resultado Filtro Fx-Sepia
-[logo]: https://raw.githubusercontent.com/robson-fernandes/Rx-components/master/fx-sepia.jpg
+![Resultado Fx-Sepia][fxsepia]
+[fxsepia]: https://raw.githubusercontent.com/robson-fernandes/Rx-components/master/fx-sepia.jpg

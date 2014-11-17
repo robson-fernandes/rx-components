@@ -40,7 +40,7 @@ Aplicação do filtro de inversão através da tag ```<fx-grayscale>```. O Filtr
 ```
 
 ###Resultado Filtro Fx-GrayScale
-![Resultado Fx-GrayScale][fxsepia]
+![Resultado Fx-GrayScale][fxgrayscale]
 
 Antes e depois da aplicação do escala de cinza
-[fxsepia]: https://raw.githubusercontent.com/robson-fernandes/Rx-components/master/fx-grayscale.jpg
+[fxgrayscale]: https://raw.githubusercontent.com/robson-fernandes/Rx-components/master/fx-grayscale.jpg

@@ -26,6 +26,26 @@ Antes e depois da aplicação do filtro sépia
 [fxsepia]: https://raw.githubusercontent.com/robson-fernandes/Rx-components/master/fx-sepia.jpg
 
 
+##Fx-invert
+
+Aplicação do filtro de inversão através da tag ```<fx-invert>```. O Filtro inverter possui a característica de efetuar a inversão das cores da imagem.
+
+
+```html
+<rx-image src="lena.jpg">
+    <fx-filter>
+         <fx-invert></fx-invert>
+     </fx-filter>
+</rx-image>
+```
+
+###Resultado Filtro Fx-Invert
+![Resultado Fx-Invert][fxinvert]
+
+Antes e depois da aplicação do filtro inverter
+[fxinvert]: https://raw.githubusercontent.com/robson-fernandes/Rx-components/master/fx-invert.jpg
+
+
 ##Fx-GrayScale
 
 Aplicação do filtro de inversão através da tag ```<fx-grayscale>```. O Filtro Gray Scale possui a característica converter uma imagem colorida em uma escala de tons de cinza.

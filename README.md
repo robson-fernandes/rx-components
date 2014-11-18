@@ -44,3 +44,23 @@ Aplicação do filtro de inversão através da tag ```<fx-grayscale>```. O Filtr
 
 Antes e depois da aplicação do escala de cinza
 [fxgrayscale]: https://raw.githubusercontent.com/robson-fernandes/Rx-components/master/fx-grayscale.jpg
+
+
+##Fx-Blur
+
+Aplicação do filtro de blur através da tag ```<fx-blur>```. O Filtro Blur possui a característica aplicar um efeito “embaçado” em uma imagem.
+
+
+```html
+<rx-image src="lena.jpg">
+    <fx-filter>
+         <fx-blur></fx-blur>
+     </fx-filter>
+</rx-image>
+```
+
+###Resultado Filtro Fx-Blur
+![Resultado Fx-Blur][fxblur]
+
+Antes e depois da aplicação do filtro blur
+[fxblur]: https://raw.githubusercontent.com/robson-fernandes/Rx-components/master/fx-blur.jpg

@@ -1,67 +1,94 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Filtragem - GrayScale
+ * @param img
+ * @constructor
  */
-
 function GrayScaleFilter(img) {
     this.scale = 100;
     this.execute = function() {
-        var c = img.className;
         img.className = "GrayScaleFilter" + " " + img.className + " ";
     };
 }
 
+/**
+ * Filtragem - Shadow
+ * @param img
+ * @constructor
+ */
 function ShadowFilter(img) {
     this.execute = function() {
-        var c = img.className;
         img.className = "ShadowFilter" + " " + img.className + " ";
     };
 }
 
+/**
+ * Filtragem - Blur
+ * @param img
+ * @constructor
+ */
 function BlurFilter(img) {
     this.execute = function() {
-        var c = img.className;
         img.className = "BlurFilter" + " " + img.className  + " ";
     };
 }
 
+/**
+ * Filtragem - Invert
+ * @param img
+ * @constructor
+ */
 function InvertFilter(img) {
     this.execute = function() {
-        var c = img.className;
         img.className = "InvertFilter" + " " + img.className  + " ";
     };
 }
 
+/**
+ * Filtragem Sepia
+ * @param img
+ * @constructor
+ */
 function SepiaFilter(img) {
     this.execute = function() {
-        var c = img.className;
         img.className = "SepiaFilter" + " " + img.className  + " ";
     };
 }
 
+/**
+ * Class Factory
+ * @param img
+ * @param f
+ * @constructor
+ */
 function FilterFactory(img,f) {
+
+    /**
+     * Method Execute
+     */
     this.execute = function() {
-        if (f.localName === "fx-grayscale")
+
+        switch (f.localName)
         {
-           new GrayScaleFilter(img).execute();
+            case "fx-grayscale":
+                new GrayScaleFilter(img).execute();
+                break;
+
+            case "fx-shadow":
+                new ShadowFilter(img).execute();
+                break;
+
+            case "fx-blur":
+                new BlurFilter(img).execute();
+                break;
+
+            case "fx-invert":
+                new InvertFilter(img).execute();
+                break;
+
+            case "fx-sepia":
+                new SepiaFilter(img).execute();
+                break;
         }
-        else if (f.localName === "fx-shadow")
-        {
-           new ShadowFilter(img).execute();
-        }
-        else if (f.localName === "fx-blur")
-        {
-           new BlurFilter(img).execute();
-        }
-        else if (f.localName === "fx-invert")
-        {
-           new InvertFilter(img).execute();
-        }
-        else if (f.localName === "fx-sepia")
-        {
-           new SepiaFilter(img).execute();
-        }
+
     };
 }
-
